@@ -11,13 +11,9 @@ document.addEventListener('keydown',(event)=>{
     }
 })
 
-// document.querySelector(buttonControl).addEventListener('click',(event)=>{
-//   if (event.code === 'Space') {
-//   event.preventDefault();
-//   process()
-//   }
-// })
-
+buttonControl.addEventListener('click', () => {
+  process(); // Call the same process function
+});
 
 let process = ()=>{
     let player1=(Math.floor(Math.random()*3)+1);
@@ -38,4 +34,3 @@ let process = ()=>{
         winnerTag.innerHTML="PLAYER 2 WINS";
       }
 }
-
